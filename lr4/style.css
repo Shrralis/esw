@@ -1,0 +1,169 @@
+@charset "utf-8";
+
+
+.body
+{	
+	width: 500px;
+	color: #000000;
+	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
+	text-decoration: none;
+	text-align: left;
+	margin: 0 auto;
+	list-style-type: none;
+
+}
+
+.body a
+{
+	border: thin solid #8D8D8D;
+	background-image: -webkit-linear-gradient(270deg,rgba(236,234,234,1.00) 0%,rgba(239,231,232,1.00) 50.26%,rgba(233,230,230,1.00) 100%);
+	background-image: -moz-linear-gradient(270deg,rgba(236,234,234,1.00) 0%,rgba(239,231,232,1.00) 50.26%,rgba(233,230,230,1.00) 100%);
+	background-image: -o-linear-gradient(270deg,rgba(236,234,234,1.00) 0%,rgba(239,231,232,1.00) 50.26%,rgba(233,230,230,1.00) 100%);
+	background-image: linear-gradient(180deg,rgba(236,234,234,1.00) 0%,rgba(239,231,232,1.00) 50.26%,rgba(233,230,230,1.00) 100%);
+	color: #000000;
+	background-size: contain;
+	display: list-item;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	
+}
+
+.view-source {
+	width: 500px;
+	padding-top: 1px;
+	color: #000000;
+
+}
+
+.body input
+{
+
+}
+ 
+#photo {}
+
+#name1{}
+
+#name2{
+
+}
+
+#adres1{}
+
+#adres2{}
+
+#E-mail1{}
+
+#E-mail2{}
+
+#telephone1{}
+
+#telephone2{}
+
+#Objectives1{}
+
+#Objectives2{}
+
+#posada1{}
+
+#posada2{}
+
+#company1{}
+
+#company2{}
+
+#city1{}
+
+#city2{}
+
+#datepoch{}
+
+#month1{}
+
+#year1{}
+
+#dateend{}
+
+#month2{}
+
+#year2{}
+
+#obov{}
+
+#dosjagnenja{}
+
+#shool1{}
+
+#shool2{}
+
+#city3{}
+
+#cityshool{}
+
+#datewup{}
+
+#month3{}
+
+#year3{}
+
+#wchene1{}
+
+#wchene2{}
+
+#honnors1{}
+
+#honnors2{}
+
+#scils1{}
+
+#scils2{}
+
+#languages1{}
+
+#languages2{}
+
+#Interests1{}
+
+#Interests2{}
+
+#organisation1{}
+
+#organisation2{}
+
+#Ref1{}
+
+#Ref2{}
+
+#Ref3{}
+
+#sub{
+	padding-top: 5px;
+	padding-right: 5px;
+	padding-bottom: 5px;
+	padding-left: 5px;
+	border: thin solid #0052F8;
+	font-family: "Century Gothic";
+	font-style: normal;
+	font-variant: normal;
+	font-size: 10pt;
+	text-shadow: 0px 0px;
+	text-align: center;
+	text-transform: none;
+	-webkit-box-shadow: 3px -1px 12px 0px;
+	box-shadow: 3px -1px 12px 0px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	color: #FFFFFF;
+	background-color: #5984FB;
+	border-radius: 5px / 1px;
+}
+
+#save{
+	width: 500px;
+}
+
+#op{}
+
+.pre {
+	font-size: 20px;
+}

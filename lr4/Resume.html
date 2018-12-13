@@ -1,0 +1,232 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Резюме</title>
+<script src="jquery-2.1.3.min.js"></script>
+<script src="Untitled-3.js"> </script>
+
+<link href="style.css" rel="stylesheet" type="text/css">
+
+<style>
+   a 
+   { 
+    text-decoration: none; 
+   } 
+  </style>
+
+</head>
+<body>
+<input type="button" onclick="changeLanguage()" value="eng" id = "lan_button">
+<div class="body">
+<form name="resume" method="post" action="action.php">
+
+<div class="view-source">
+
+<a href="#" onClick="Show" id="con_inf" title = " ваше ім’я, e-mail, адреса, телефон; одним словом все, щоб вас змогли з контактувати для інтерв’ю та після нього">Контактна інформація</a>
+
+
+	<div class="hide">
+		<label id="name1"> Повне ім'я </label>
+			<br>
+		<input type="text" name="fullname" size=40 id="name2">
+			<br>
+
+		<label id="adres1"> Ваша адреса </label>
+			<br>
+		<input type="text" name="adress" size=40 id="adres2">
+			<br>
+
+		<label id="E-mail1"> E-mail </label>
+			<br>
+		<input type="text" name="E-mail" size=40 id="E-mail2">
+			<br>
+
+		<label id="telephone1"> Номер телефону </label>
+			<br>
+		<input type="text" name="telephone" size=40 id="telephone2">
+	</div>
+</div>
+
+<div class="view-source">
+<a href="#" onClick="Show" id = "obj" title = " це ваші цілі та мета, так би мовити загальний опис вас як спеціаліста у 3-5 речень">Опис</a>
+
+	<div class="hide">
+		<label id="Objectives1"> Опис </label>
+        <br>
+		<textarea id="Objectives2" name="objective" rows=10 cols=40></textarea>
+	</div>
+
+</div>
+
+<div class="view-source">
+<a href="#" onClick="Show" id = "exp" title = " ваш робочий досвід; не пишіть 20 проектів i роб. місць; опишіть максимум 3, але таких, що найбільше підходять під дану позицію на яку ви претендуєте, і показують вас у найкращому світлі">Досвід роботи</a>
+
+	<div class="hide">
+		<label id="posada1"> Посада </label>
+        <br>
+		<input id="posada2" name="posada" type="text" size=40>
+        <br>
+        <label id="company1"> Назва компанії </label>
+        <br>
+		<input id="company2" name="company" type="text" size=40>
+        <br>
+        <label id="city1"> Місто </label>
+        <br>
+		<input id="city2" name="city" type="text" size=40>
+        <br>
+        <label id="datepoch"> Дата початку </label>
+        <br>
+        <SELECT NAME="month1" id="month1" > 
+		<OPTION VALUE="Грудень"> Грудень
+		<OPTION VALUE="Січень"> Січень
+		<OPTION VALUE="Лютий"> Лютий
+		<OPTION VALUE="Березень"> Березень
+		<OPTION VALUE="Квітень"> Квітень
+        <OPTION VALUE="Травень"> Травень
+        <OPTION VALUE="Червень"> Червень 
+        <OPTION VALUE="Липень"> Липень
+        <OPTION VALUE="Серпень"> Серпень
+        <OPTION VALUE="Вересень"> Вересень 
+        <OPTION VALUE="Жовтень"> Жовтень
+        <OPTION VALUE="Листопад"> Листопад 
+        </SELECT>
+        <input id="year1" name="year1" type="text" size=1> р.
+        <br>
+        <label id="dateend"> Дата закінчення </label>
+        <br>
+        <SELECT NAME="month2" id="month2"> 
+		<OPTION VALUE="Грудень"> Грудень
+		<OPTION VALUE="Січень"> Січень
+		<OPTION VALUE="Лютий"> Лютий
+		<OPTION VALUE="Березень"> Березень
+		<OPTION VALUE="Квітень"> Квітень
+        <OPTION VALUE="Травень"> Травень
+        <OPTION VALUE="Червень"> Червень 
+        <OPTION VALUE="Липень"> Липень
+        <OPTION VALUE="Серпень"> Серпень
+        <OPTION VALUE="Вересень"> Вересень 
+        <OPTION VALUE="Жовтень"> Жовтень
+        <OPTION VALUE="Листопад"> Листопад 
+        </SELECT>
+        <input id="year2" name="year2" type="text" size=1> р.
+        <br>
+        <label id="obov"> Обов'язки та досягнення </label>
+        <br>
+        <textarea id="dosjagnenja" name="dosjagnenja" rows=10 cols=40></textarea>
+	</div>
+
+</div>
+
+<div class="view-source">
+<a href="#" onClick="Show" id = "edu" title = "тут все просто – вводити дані про свою освіту; дитсадок згадувати не треба, достатньо один ВУЗ"> Освіта </a>
+
+	<div class="hide">
+		<label id="shool1"> Школа </label>
+        <br>
+		<input id="shool2" name="school" type="text" size=40>
+        <br>
+        <label id="city3"> Місто </label>
+        <br>
+		<input id="cityshool" name="cityshool" type="text" size=40>
+        <br>
+        <label id="datewup"> Дата випуску </label>
+        <br>
+        <SELECT NAME="month3" id="month3"> 
+		<OPTION VALUE="Грудень"> Грудень
+		<OPTION VALUE="Січень"> Січень
+		<OPTION VALUE="Лютий"> Лютий
+		<OPTION VALUE="Березень"> Березень
+		<OPTION VALUE="Квітень"> Квітень
+        <OPTION VALUE="Травень"> Травень
+        <OPTION VALUE="Червень"> Червень 
+        <OPTION VALUE="Липень"> Липень
+        <OPTION VALUE="Серпень"> Серпень
+        <OPTION VALUE="Вересень"> Вересень 
+        <OPTION VALUE="Жовтень"> Жовтень
+        <OPTION VALUE="Листопад"> Листопад 
+        </SELECT>
+        <input id="year3" name="year3" type="text" size=1> р.
+        <br>
+        <label id="wchene1"> Вчене звання </label>
+        <br>
+        <input id="wchene2" name="wchene" type="text" size=40>
+        <br>
+        <label id="honnors1"> Нагороди та премії </label>
+        <br>
+        <textarea id="honnors2" name="honnors" rows=10 cols=40></textarea>
+	</div>
+
+</div>
+
+<div class="view-source">
+<a href="#" onClick="Show" id = "skills" title = "список ваших навиків та технологій; починайте з найбільш актуальних для вашої позиції"> Навички та технології </a>
+
+	<div class="hide">
+		<label id="scils1"> Навички </label>
+        <br>
+		<textarea id="scils2" name="scils" rows=10 cols=40></textarea>
+	</div>
+
+</div>
+
+<div class="view-source">
+<a href="#" onClick="Show" id = "lan" title = " список мов, якими володієте; починайте з найкращого рівня до найнищого; не забудьте додати до кожної мови рівень володіння нею: початківець, середній, вільно володію"> Знання іноземних мов </a>
+
+	<div class="hide">
+		<label id="languages1"> Мови якими ви володієте </label>
+        <br>
+		<textarea id="languages2" name="languages" rows=10 cols=40></textarea>
+	</div>
+
+</div>
+
+<div class="view-source">
+<a href="#" onClick="Show" id = "int" title=" перечисліть зацікавлення та хобі; ідеально, щоб були як поза роботою, так і дотичні до неї; наприклад математика, робототехніка чудово доповнять ваше програмістське резюме"> Інтереси/Хобі </a>
+
+	<div class="hide">
+		<label id="Interests1"> Ваші інтереси </label>
+        <br>
+		<textarea id="Interests2" name="interests" rows=10 cols=40></textarea>
+	</div>
+
+</div>
+
+<div class="view-source">
+<a href="#" onClick="Show" id = "aff" title = "список організацій, гуртків та секцій до яких ви належите; наведіть все, що не має відношення до вашої роботи, так і те, що може мати позитивний вплив; наприклад членство у фундації фреймворка, на якому пишете, буде надзвичайно великим плюсом у вашому резюме"> Організації </a>
+
+	<div class="hide">
+		<label id="organisation1"> Список організацій до яких ви належите </label>
+        <br>
+		<textarea id="organisation2" name="organisation" rows=10 cols=40></textarea>
+	</div>
+
+</div>
+
+<div class="view-source">
+<a href="#" onClick="Show" id = "ref" title = "чи маєте контакти людей, які можуть за вас поручитись і підтвердити, що вони мали гарний досвід співпраці з вами як з програмістом; це наприклад може бути ваш попередній роботодавець, команда стартап у якій ви брали участь, тощо"> Контакти/відгуки клієнтів </a>
+
+	<div class="hide">
+		<label id="Ref1"> Чи маєте ви контакти людей які можуть за вас поручитися? </label>
+        <br>
+        <input id="Ref2" type="radio" name="Ref" value="Так"> Так 
+         
+        <br>
+        <input id="Ref3" type="radio" name="Ref" value="Ні"> Ні
+	</div>
+
+</div>
+
+<input id="sub" type="submit" value="Зберегти резюме">
+</form>
+<div id="save">
+
+<a href="preview.php" id="op"> Переглянути резюме </a>
+
+</div>
+</div>
+
+
+<script type="text/javascript" src="script/language.js"></script>
+</body>
+</html>
