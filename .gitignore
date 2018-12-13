@@ -104,3 +104,4 @@ venv.bak/
 .mypy_cache/
 .idea/
 results.txt
+/lr2/commentaries.txt
